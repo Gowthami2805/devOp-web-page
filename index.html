@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎧 Music Mood Matcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>🎧 Music Mood Matcher</h1>
+    <p>Select your current mood and get music vibes to match it!</p>
+
+    <div class="buttons">
+      <button onclick="suggestMusic('happy')">😊 Happy</button>
+      <button onclick="suggestMusic('sad')">😔 Sad</button>
+      <button onclick="suggestMusic('angry')">😤 Angry</button>
+      <button onclick="suggestMusic('relaxed')">😌 Relaxed</button>
+    </div>
+
+    <div id="suggestion" class="suggestion-box"></div>
+
+    <audio id="player" controls style="display: none; margin-top: 20px;">
+      <source id="musicSource" src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
